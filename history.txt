@@ -1,0 +1,16 @@
+  996  ls test/
+  997  cat test/file.txt
+  998  cd ..
+  999  ssh -i ~/.ssh/id_rsa ec2-user@linux.itcareerhub.de
+ 1000  exit
+ 1001  git clone git@github.com:iohichu/new.git
+ 1002  cd new
+ 1003  git checkout -b feature
+ 1004  echo "Hello" > README.md
+ 1005  git add .
+ 1006  git commit -m "added new files"
+ 1007  git push -u origin feature
+ 1008  git commit --ammend
+ 1009  git commit --amend
+ 1010  git checkout main
+ 1011  git merge feature
